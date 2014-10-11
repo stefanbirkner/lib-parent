@@ -14,7 +14,7 @@ Add this as parent POM to your project.
     <parent>
       <groupId>com.github.stefanbirkner</groupId>
       <artifactId>lib-parent</artifactId>
-      <version>1</version>
+      <version>2</version>
     </parent>
 
 You can release your library to
