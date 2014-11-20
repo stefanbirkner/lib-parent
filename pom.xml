@@ -10,7 +10,7 @@
 
 	<groupId>com.github.stefanbirkner</groupId>
 	<artifactId>lib-parent</artifactId>
-	<version>3</version>
+	<version>4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Stefan Birkner's Parent for Libraries</name>
@@ -43,7 +43,7 @@
 		<connection>scm:git:git://github.com/stefanbirkner/lib-parent.git</connection>
 		<developerConnection>scm:git:git@github.com:stefanbirkner/lib-parent.git</developerConnection>
 		<url>https://github.com/stefanbirkner/lib-parent/</url>
-	  <tag>lib-parent-3</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<properties>
