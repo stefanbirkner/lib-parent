@@ -34,8 +34,8 @@ Now release the POM.
 You can release the library to
 [Maven Central](http://search.maven.org/) with two steps.
 
-* Run `mvn release:prepare`
-* Run `mvn release:perform`
+* Run `mvn clean deploy`
+* Run `mvn nexus-staging:release`
 
 Afterwards please update the `Installation` section of this readme with
 the new version.
