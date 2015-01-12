@@ -32,10 +32,10 @@ Now release the POM.
 ## Release Guide
 
 You can release the library to
-[Maven Central](http://search.maven.org/) with two steps.
+[Maven Central](http://search.maven.org/) with a few steps.
 
+* Set the new version in `pom.xml` and in the installation section of
+  this document.
+* Commit the updated `pom.xml` and `README.md`.
 * Run `mvn clean deploy`
-* Run `mvn nexus-staging:release`
-
-Afterwards please update the `Installation` section of this readme with
-the new version.
+* Add a tag for the release: `git tag lib-parent-XX`
