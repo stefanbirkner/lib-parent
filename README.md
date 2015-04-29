@@ -2,8 +2,9 @@
 
 The common parent POM of Stefan Birkner's Java libraries. This POM
 
-* sets the current version for all standard plugins and configures
-* provides configuration for a two step release
+* sets the current version for all standard plugins
+* provides configuration for a simple release workflow
+* adds plugins that I always use
 
 The POM is published under the
 [MIT license](http://opensource.org/licenses/MIT).
@@ -22,7 +23,7 @@ snippet to your `pom.xml`.
 
 ## Development Guide
 
-Check für plugin updates by running
+Check for plugin updates by running
 
     mvn -U versions:display-plugin-updates
 
@@ -31,7 +32,7 @@ Now release the POM.
 
 ## Release Guide
 
-You can release the library to
+You can release the POM to
 [Maven Central](http://search.maven.org/) with a few steps.
 
 * Set the new version in `pom.xml` and in the installation section of
