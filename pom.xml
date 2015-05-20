@@ -4,7 +4,7 @@
 
 	<groupId>com.github.stefanbirkner</groupId>
 	<artifactId>lib-parent</artifactId>
-	<version>7</version>
+	<version>8-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Stefan Birkner's Parent for Libraries</name>
@@ -112,7 +112,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>flatten-maven-plugin</artifactId>
-					<version>1.0.0-beta-3</version>
+					<version>1.0.0-beta-5</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
