@@ -17,7 +17,7 @@ snippet to your `pom.xml`.
     <parent>
       <groupId>com.github.stefanbirkner</groupId>
       <artifactId>lib-parent</artifactId>
-      <version>11</version>
+      <version>12</version>
     </parent>
 
 

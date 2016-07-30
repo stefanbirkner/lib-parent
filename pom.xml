@@ -4,7 +4,7 @@
 
 	<groupId>com.github.stefanbirkner</groupId>
 	<artifactId>lib-parent</artifactId>
-	<version>11</version>
+	<version>12</version>
 	<packaging>pom</packaging>
 
 	<name>Stefan Birkner's Parent for Libraries</name>
@@ -117,7 +117,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>findbugs-maven-plugin</artifactId>
-					<version>3.0.3</version>
+					<version>3.0.4</version>
 				</plugin>
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
