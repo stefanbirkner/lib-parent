@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.stefanbirkner</groupId>
 	<artifactId>lib-parent</artifactId>
-	<version>12</version>
+	<version>13</version>
 	<packaging>pom</packaging>
 
 	<name>Stefan Birkner's Parent for Libraries</name>
@@ -120,6 +120,11 @@
 					<version>3.0.4</version>
 				</plugin>
 				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>tidy-maven-plugin</artifactId>
+					<version>1.0.0</version>
+				</plugin>
+				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
 					<artifactId>nexus-staging-maven-plugin</artifactId>
 					<version>1.6.7</version>
@@ -186,6 +191,19 @@
 				</executions>
 			</plugin>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tidy-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>validate</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
 				<extensions>true</extensions>
@@ -197,6 +215,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
 	<profiles>
 		<profile>
 			<id>findbugs</id>
