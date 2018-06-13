@@ -4,7 +4,7 @@
 
 	<groupId>com.github.stefanbirkner</groupId>
 	<artifactId>lib-parent</artifactId>
-	<version>15</version>
+	<version>16</version>
 	<packaging>pom</packaging>
 
 	<name>Stefan Birkner's Parent for Libraries</name>
@@ -30,7 +30,7 @@
 	</developers>
 
 	<prerequisites>
-		<maven>3.1.1</maven>
+		<maven>3.2.5</maven>
 	</prerequisites>
 
 	<scm>
@@ -59,7 +59,7 @@
 			<plugins>
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.0.0</version>
+					<version>3.1.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
@@ -67,7 +67,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.0.2</version>
+					<version>3.1.1</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-deploy-plugin</artifactId>
@@ -87,19 +87,19 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.0.2</version>
+					<version>3.1.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.0.0</version>
+					<version>3.0.1</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.0.2</version>
+					<version>3.1.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-site-plugin</artifactId>
-					<version>3.6</version>
+					<version>3.7.1</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
@@ -107,12 +107,12 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.20.1</version>
+					<version>2.22.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>flatten-maven-plugin</artifactId>
-					<version>1.0.0</version>
+					<version>1.0.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
