@@ -4,7 +4,7 @@
 
 	<groupId>com.github.stefanbirkner</groupId>
 	<artifactId>lib-parent</artifactId>
-	<version>17</version>
+	<version>18</version>
 	<packaging>pom</packaging>
 
 	<name>Stefan Birkner's Parent for Libraries</name>
@@ -100,14 +100,14 @@
 					<version>2.22.0</version>
 				</plugin>
 				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>flatten-maven-plugin</artifactId>
-					<version>1.0.1</version>
+					<groupId>com.github.spotbugs</groupId>
+					<artifactId>spotbugs-maven-plugin</artifactId>
+					<version>4.9.3.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>findbugs-maven-plugin</artifactId>
-					<version>3.0.5</version>
+					<artifactId>flatten-maven-plugin</artifactId>
+					<version>1.0.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -207,20 +207,16 @@
 
 	<profiles>
 		<profile>
-			<id>findbugs</id>
+			<id>spotbugs</id>
 			<activation>
-				<!-- FindBugs requires Java 7 because it is compiled with JDK 7. -->
-				<jdk>[1.7,)</jdk>
+				<!-- SpotBugs requires Java 11. -->
+				<jdk>[11,)</jdk>
 			</activation>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>findbugs-maven-plugin</artifactId>
-						<configuration>
-							<effort>Max</effort>
-							<threshold>Low</threshold>
-						</configuration>
+						<groupId>com.github.spotbugs</groupId>
+						<artifactId>spotbugs-maven-plugin</artifactId>
 						<executions>
 							<execution>
 								<goals>
