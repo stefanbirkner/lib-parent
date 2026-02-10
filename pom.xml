@@ -4,7 +4,7 @@
 
 	<groupId>com.github.stefanbirkner</groupId>
 	<artifactId>lib-parent</artifactId>
-	<version>18</version>
+	<version>19</version>
 	<packaging>pom</packaging>
 
 	<name>Stefan Birkner's Parent for Libraries</name>
@@ -28,10 +28,6 @@
 			<timezone>+1</timezone>
 		</developer>
 	</developers>
-
-	<prerequisites>
-		<maven>3.2.5</maven>
-	</prerequisites>
 
 	<scm>
 		<connection>scm:git:git://github.com/stefanbirkner/lib-parent.git</connection>
